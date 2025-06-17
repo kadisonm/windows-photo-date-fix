@@ -14,7 +14,7 @@ $dateTaken = $dir.GetDetailsOf($dir.ParseName($fileName), 12) -replace $CharWhit
 
 if ($dateTaken -ne "") {
     $dateTime = Get-Date -Date $dateTaken
-    "$($fileName) was updated to $($dateTime) (via dateTaken)"
+    "$($fileName) was updated to $($dateTime) (via date taken)"
     $file.CreationTime = $dateTime
     $file.LastWriteTime = $dateTime
     exit
@@ -24,7 +24,7 @@ $mediaCreated = $dir.GetDetailsOf($dir.ParseName($fileName), 208) -replace $Char
 
 if ($mediaCreated -ne "") {
     $dateTime = Get-Date -Date $mediaCreated 
-    "$($fileName) was updated to $($dateTime) (via mediaCreated)"
+    "$($fileName) was updated to $($dateTime) (via media created)"
     $file.CreationTime = $dateTime
     $file.LastWriteTime = $dateTime
 }

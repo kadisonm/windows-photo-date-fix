@@ -19,7 +19,7 @@ for ($i=0; $i -lt $files.Count; $i++) {
          $dateTime = Get-Date -Date $dateTaken
          $file.CreationTime = $dateTime
          $file.LastWriteTime = $dateTime
-         "$($i)/$($files.Count) - $($fileName) -> $($dateTime) (via dateTaken)"
+         "$($i)/$($files.Count) - $($fileName) -> $($dateTime) (via date taken)"
         continue
     }
 
@@ -29,6 +29,6 @@ for ($i=0; $i -lt $files.Count; $i++) {
         $dateTime = Get-Date -Date $mediaCreated 
         $file.CreationTime = $dateTime
         $file.LastWriteTime = $dateTime
-        "$($i)/$($files.Count) - $($fileName) -> $($dateTime) (via mediaCreated)"
+        "$($i)/$($files.Count) - $($fileName) -> $($dateTime) (via media created)"
     }
 }
