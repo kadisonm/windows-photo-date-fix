@@ -1,3 +1,5 @@
+# Sets the modified date of an entire folder to the creation date
+
 $path = "" # Insert the path to your folder. Make sure the path ends with \
 $files = Get-ChildItem $path
 

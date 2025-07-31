@@ -1,4 +1,6 @@
-$defaultDate = "01/01/2020" # The date to set files by default if their date taken or media created date can't be found
+# Sets the creation date and modified date to either the date taken, media created or the default date set
+
+$defaultDate = "01/01/2025" # The date to set files by default if their date taken or media created date can't be found
 $path = "" # Insert the path to your folder. Make sure the path ends with \
 $fileName = "" # Add your file name here with no backslashes
 
