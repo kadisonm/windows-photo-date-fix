@@ -16,6 +16,14 @@ Takes a path to a specific file and will update its creation and modified date t
 
 Takes a path to a folder and fixes its creation and modified date (same as described previously)
 
-`creation-to-modified.ps1`
+`creation.ps1`
 
 Takes a path to a folder and updates every file's modified date to match its creation date. This is a fix for the modified date unintentionally being updated after already running one of the previous scripts.
+
+`modified.ps1`
+
+Takes a path to a folder and updates every file's creation date to match its modified date. This can potentially fix problems where windows automatically updates the creation date of a file upon download.
+
+`name.ps1`
+
+Takes a path to a folder and updates every file's creation and modified date to its name if it has a date at the beginning (e.g. 2025-01-01-xxxx). (Make sure all files have a date at the start of the name and follow the same format)
