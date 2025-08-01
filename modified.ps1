@@ -13,7 +13,5 @@ for ($i=0; $i -lt $files.Count; $i++) {
 
     $file.CreationTime = $file.LastWriteTime
 
-    $dir.GetDetailsOf($dir.ParseName($fileName), 12) = $file.LastWriteTime 
-
     "$($i + 1)/$($files.Count) - $($fileName) -> $($file.LastWriteTime) (via modified date)"
 }
